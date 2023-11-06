@@ -1,5 +1,6 @@
  .u-section-1 {
   background-image: url("https://i0.wp.com/www.printmag.com/wp-content/uploads/2021/02/4cbe8d_f1ed2800a49649848102c68fc5a66e53mv2.gif");
+  background-position: 50% 50%;
 }
 
 .u-section-1 .u-sheet-1 {
@@ -202,7 +203,6 @@
 }
 
 .u-section-4 .u-repeater-1 {
-  grid-auto-columns: calc(50% - 5px);
   grid-template-columns: repeat(2, calc(50% - 5px));
   min-height: 405px;
   grid-gap: 10px;
@@ -390,7 +390,6 @@
   }
 
   .u-section-4 .u-repeater-1 {
-    grid-auto-columns: calc(100% - 0px);
     grid-template-columns: 100%;
   }
 
@@ -410,10 +409,6 @@
 
   .u-section-4 .u-text-1 {
     margin-right: 0;
-  }
-
-  .u-section-4 .u-repeater-1 {
-    grid-auto-columns: 100%;
   }
 
   .u-section-4 .u-image-1 {
