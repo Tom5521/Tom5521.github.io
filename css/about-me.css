@@ -1,5 +1,9 @@
 body {
   background: black;
-  color:white;
+  color: white;
   font-size: 160%;
+}
+
+header {
+  background: grey;
 }
