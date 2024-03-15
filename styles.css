@@ -6,8 +6,9 @@ body {
   color: white;
 }
 
-#my-github-container {
-  float: right;
+footer {
+  background: black;
+  text-align: center;
 }
 
 .wrap {
