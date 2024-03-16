@@ -53,9 +53,21 @@
           </ol>
         </div>
         <div class="dual-div-item">
+          <h6 style="font-size: 20%">(reload the page to change image)</h6>
           <h4>I love you zazu!!!</h4>
           <a href="https://www.instagram.com/zazubabyman/">
-            <img src="./images/zazu.jpg" style="width: 80%" />
+            <img id="zazu-img" style="width: 80%" />
+            <script>
+              const imgs = [
+                "./images/zazu/zazu.jpg",
+                "./images/zazu/born-to-dilly-dally.jpg",
+                "./images/zazu/theres-motion.jpg",
+                "./images/zazu/zazu-in-the-war.jpg",
+                "./images/zazu/zazu-in-watermelon.jpg",
+              ];
+              const number = Math.floor(Math.random() * imgs.length);
+              document.getElementById("zazu-img").src = imgs[number];
+            </script>
           </a>
         </div>
       </div>
