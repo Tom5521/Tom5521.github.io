@@ -39,3 +39,7 @@
   width: 50%;
   text-align: center;
 }
+
+.bold {
+  font-weight: 600;
+}
