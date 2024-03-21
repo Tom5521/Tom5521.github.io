@@ -50,3 +50,7 @@
   color: blue;
   font-weight: bold;
 }
+
+.center-text {
+  text-align: center;
+}
