@@ -10,6 +10,11 @@ footer {
 }
 
 .good-item {
+  a {
+    color: aqua;
+    text-decoration: none;
+    font-weight: bold;
+  }
   margin-left: 40px;
   font-size: 140%;
 }

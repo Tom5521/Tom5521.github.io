@@ -1,5 +1,7 @@
+/* set default font*/
 * {
-  font-family: Arial, Helvetica, sans-serif;
+  /*https://fonts.google.com/specimen/Be+Vietnam+Pro*/
+  font-family: be-vietnam-pro;
 }
 
 .to-right {
@@ -42,4 +44,10 @@
 
 .bold {
   font-weight: 600;
+}
+
+.link {
+  text-decoration: none;
+  color: blue;
+  font-weight: bold;
 }
