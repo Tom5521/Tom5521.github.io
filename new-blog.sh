@@ -9,4 +9,4 @@ template='<!doctype html>
 <body></body>
 </html>'
 
-printf "$template" "$1" >./blog/$2.html
+printf "$template" "Post #$1" >./blog/$2.html
