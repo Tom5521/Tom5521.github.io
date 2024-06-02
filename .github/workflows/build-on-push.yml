@@ -8,6 +8,7 @@ runs:
 
 jobs:
   build:
+    runs-on: fedora-latest
     steps:
       - name: Build
         run: just build-js
