@@ -2,13 +2,10 @@ name: build-on-push
 
 on: push
 
-runs:
-  using: "docker"
-  image: "Dockerfile"
-
 jobs:
   build:
     runs-on: fedora-latest
+    container: Dockerfile
     steps:
       - name: Build
         run: just build-js
