@@ -7,6 +7,7 @@ jobs:
       - name: build
         uses: ./.github/actions/build-img
       - name: copy
+        run: mkdir -p js && cp /github/workspace/js/* ./js/
         with:
           name: imgs
           path: ${{ github.workspace }}
