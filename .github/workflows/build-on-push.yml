@@ -15,5 +15,7 @@ jobs:
       #   run: echo "export GOPHERJS_GOROOT=\"$(go1.19.13 env GOROOT)\"" >> ~/.bashrc
       - name: Install gopherjs
         run: go install github.com/gopherjs/gopherjs@v1.19.0-beta1
+      - name: Install just
+        run: apt install just
       - name: Build
         run: just build-js
