@@ -1,4 +1,4 @@
-//go:build js
+//go:build wasm
 
 package main
 
@@ -8,6 +8,7 @@ import (
 )
 
 func main() {
+	// os.ReadDir() won't work :(.
 	var images = []string{
 		"./images/zazu/zazu.jpg",
 		"./images/zazu/born-to-dilly-dally.jpg",
