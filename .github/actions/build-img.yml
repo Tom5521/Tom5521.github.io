@@ -1,0 +1,4 @@
+name: build-img
+runs:
+  using: docker
+  image: Dockerfile

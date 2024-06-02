@@ -1,0 +1,12 @@
+on: [push]
+
+jobs:
+  build:
+    runs-on: fedora-latest
+    steps:
+      - name: build
+        uses: ./.github/actions/build-img
+      - name: copy
+        with:
+          name: imgs
+          path: ${{ github.workspace }}

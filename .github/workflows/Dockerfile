@@ -12,3 +12,7 @@ RUN go install fyne.io/fyne/v2/cmd/fyne@latest
 
 # Install gopherjs
 RUN go install github.com/gopherjs/gopherjs@v1.19.0-beta1
+
+COPY . .
+
+RUN just build-js
