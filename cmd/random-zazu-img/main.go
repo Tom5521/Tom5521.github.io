@@ -3,18 +3,25 @@
 package main
 
 import (
+	"embed"
+	"log"
 	"math/rand"
 	"syscall/js"
 )
 
+//go:embed zazu
+var imagesFS embed.FS
+
 func main() {
-	// os.ReadDir() won't work :(.
-	var images = []string{
-		"./images/zazu/zazu.jpg",
-		"./images/zazu/born-to-dilly-dally.jpg",
-		"./images/zazu/theres-motion.jpg",
-		"./images/zazu/zazu-in-the-war.jpg",
-		"./images/zazu/zazu-in-watermelon.jpg",
+	dirs, err := imagesFS.ReadDir("zazu")
+	if err != nil {
+		log.Panic(err)
+	}
+
+	var images []string
+
+	for _, dir := range dirs {
+		images = append(images, "./cmd/random-zazu-img/zazu/"+dir.Name())
 	}
 
 	randomID := rand.Intn(len(images))
