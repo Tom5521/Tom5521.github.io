@@ -21,7 +21,7 @@ func main() {
 	var images []string
 
 	for _, dir := range dirs {
-		images = append(images, "./cmd/random-zazu-img/zazu/"+dir.Name())
+		images = append(images, "./images/zazu/"+dir.Name())
 	}
 
 	randomID := rand.Intn(len(images))
