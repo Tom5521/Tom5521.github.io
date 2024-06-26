@@ -5,7 +5,7 @@ package main
 import (
 	"embed"
 	"log"
-	"math/rand"
+	"math/rand/v2"
 	"syscall/js"
 )
 
@@ -24,7 +24,7 @@ func main() {
 		images = append(images, "./images/zazu/"+dir.Name())
 	}
 
-	randomID := rand.Intn(len(images))
+	randomID := rand.N(len(images))
 
 	document := js.Global().Get("document")
 	img := document.Call("getElementById", "zazu-img")
